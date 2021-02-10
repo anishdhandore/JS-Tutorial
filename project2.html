@@ -1,28 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1: Clock</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script>
-        let a;
-        let date;
-        let time;
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-        setInterval(() => {
-            a = new Date()
-            time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds()
-            date = a.toLocaleDateString(undefined, options)
-            document.getElementById('time').innerHTML = time + "<br>on " + date 
-        }, 1000);
-    </script>
-</head>
-<body>
-
+    <title>Project 2: To-do List</title>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -60,17 +48,6 @@
         </div>
       </nav>
 
-      <div class="container my-4" style="background-color: #bfbfbf;">
-        <div class="jumbotron mx-5 my-5">
-            <h1 class="display-4">Current time is: <span id="time"></span></h1>
-            <p class="lead">We have got you covered. This is a simple hero unit, a simple jumbotron-style component for
-                calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>We are here to show you the time for different countries</p>
-            <a class="btn btn-primary btn-lg mb-5" href="#" role="button">Browse Times</a>
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
 </html>
